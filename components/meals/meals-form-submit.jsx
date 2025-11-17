@@ -10,3 +10,13 @@ export default function MealsFormSubmit() {
     </button>
   );
 }
+
+/*
+How It Works
+
+- useFormStatus() returns { pending } scoped to the closest 
+ancestor <form> that has an action tied to a server action.
+- When the form is submitted, pending becomes true until 
+the server action resolves, preventing duplicate submissions 
+and giving user feedback.
+*/
