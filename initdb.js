@@ -181,7 +181,7 @@ db.prepare(
 
 async function initData() {
   const stmt = db.prepare(`
-      INSERT INTO meals VALUES (
+      INSERT OR IGNORE INTO meals VALUES (
          null,
          @slug,
          @title,
